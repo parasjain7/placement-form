@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
 
     * {
       font-family: 'Poppins', sans-serif;
+      background-color: rgb(247, 236, 196);
     }
 
     input[type=text],
@@ -19,33 +21,49 @@
     [type=password],
     select,
     textarea {
+      width: 40%;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
-      border: 1px solid rgb(158, 154, 154);
+      border: 1px solid #a4a2a7;
       border-radius: 4px;
       box-sizing: border-box;
     }
 
     input[type=submit],
     [type=reset] {
-      width: 30%;
-      background-color: #3eaa00;
+      width: 300px;
+      background-color: #690ae6;
       color: white;
       padding: 14px 20px;
-      margin: 8px 0;
+      margin: 8px 8px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
     }
 
-    input[type=submit]:hover {
-      background-color: #45a049;
-      padding: 16px 22px;
+    input[type=reset] {
+      background-color: #d80b04;
     }
 
-    input[type=reset] {
-      background-color: #d84404f1;
+    .btn {
+      display: flex;
+    }
+
+    @media screen and (max-width: 480px) {
+
+      input[type=text],
+      [type=tel],
+      [type=email],
+      [type=password],
+      select,
+      textarea {
+        width: 100%;
+      }
+
+      .btn {
+        display: inline-block;
+      }
     }
   </style>
 </head>
@@ -60,11 +78,11 @@
       <input type="hidden" name="_cc" value="aftabgani1@gmail.com">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <label>First Name:</label>
+      <label>First Name:</label><br>
       <input type="text" name="First Name: " size="15" required placeholder="Your name.." /> <br> <br>
-      <label>Last Name:</label>
+      <label>Last Name:</label><br>
       <input type="text" name="Last Name: " size="15" required placeholder="Your last name.." /> <br> <br>
-      <label>Post Applied:</label>
+      <label>Post Applied:</label><br>
       <select required>
         <option value="Select">Select</option>
         <option value="Front-end developer">Front-end developer</option>
@@ -77,18 +95,19 @@
       <label>Gender :</label><br>
       <input type="radio" name="Male" /> Male <br>
       <input type="radio" name="Female" /> Female <br><br>
-      <label>Phone Number :</label>
-      +91 <input type="tel" name="Phone: " size="10" required /><br><br>
+      <label>Phone Number :</label><br>
+      <input type="tel" name="Phone: " size="10" required /><br><br>
       Qualifications:<br>
       <textarea cols="70" rows="3" name="Qualifications" value="Qualifications"></textarea><br><br>
-      Email:
+      Email:<br>
       <input type="email" name="Email" required /><br> <br>
-      Password:
+      Password:<br>
       <input type="Password" name="Password" required /> <br> <br>
-      Confirm password:
+      Confirm password:<br>
       <input type="Password" required /> <br> <br>
-      <input type="submit" value="Submit"/><br>
-      <input type="reset">
+      <div class="btn">
+        <input type="submit" value="Submit" /><br>
+        <input type="reset">
     </form>
   </fieldset>
 
