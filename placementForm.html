@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Form</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input[type=text],
+    [type=tel],
+    [type=email],
+    [type=password],
+    select,
+    textarea {
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(158, 154, 154);
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit],
+    [type=reset] {
+      width: 30%;
+      background-color: #3eaa00;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+      padding: 16px 22px;
+    }
+
+    input[type=reset] {
+      background-color: #d84404f1;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <fieldset>
+    <legend>Placement Form</legend>
+    <form action="https://formsubmit.co/d45e2b17d2f2c2ad93519e69b3042926" method="POST">
+      <input type="hidden" name="_next" value="https://parasjain7.github.io/thankyoupage">
+      <input type="hidden" name="_subject" value="New placement-form submission!">
+      <input type="hidden" name="_cc" value="aftabgani1@gmail.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <label>First Name:</label>
+      <input type="text" name="First Name: " size="15" required placeholder="Your name.." /> <br> <br>
+      <label>Last Name:</label>
+      <input type="text" name="Last Name: " size="15" required placeholder="Your last name.." /> <br> <br>
+      <label>Post Applied:</label>
+      <select required>
+        <option value="Select">Select</option>
+        <option value="Front-end developer">Front-end developer</option>
+        <option value="Back-end developer">Back-end developer</option>
+        <option value="Full Stack developer">Full Stack developer</option>
+        <option value="Tester">Tester</option>
+        <option value="System Designer">System Designer </option>
+        <option value="Non-technical">Non-technical</option>
+      </select><br><br>
+      <label>Gender :</label><br>
+      <input type="radio" name="Male" /> Male <br>
+      <input type="radio" name="Female" /> Female <br><br>
+      <label>Phone Number :</label>
+      +91 <input type="tel" name="Phone: " size="10" required /><br><br>
+      Qualifications:<br>
+      <textarea cols="70" rows="3" name="Qualifications" value="Qualifications"></textarea><br><br>
+      Email:
+      <input type="email" name="Email" required /><br> <br>
+      Password:
+      <input type="Password" name="Password" required /> <br> <br>
+      Confirm password:
+      <input type="Password" required /> <br> <br>
+      <input type="submit" value="Submit"/><br>
+      <input type="reset">
+    </form>
+  </fieldset>
+
+</body>
+
+</html>
